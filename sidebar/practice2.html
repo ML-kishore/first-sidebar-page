@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <div class="menu-btn">
+        <div class="first" onclick="openNav()"></div>
+        <div class="second" onclick="openNav()"></div>
+        <div class="third" onclick="openNav()"></div>
+        <h2>Sidebar Design</h2>
+        
+    </div>
+    <div class="sidebar" id="sidebar">
+        <header id="header">
+        <div class="close-btn" onclick="closenav()">
+            <span>X</span>
+        </div>
+        <h2>Alien-X</h2>
+        <img src="avatar.png" alt="">
+    </header>
+    <main id="main">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Education</a></li>
+        </ul>
+    </main>
+    <footer id="footer">
+        @Copyright act dont copy
+    </footer>
+    </div>
+    <script>
+        function openNav(){
+            document.getElementById('sidebar').style.width="250px";
+            document.getElementById('header').style.display = "flex";
+            document.getElementById('footer').style.display = "flex";
+            document.getElementById('main').style.display = 'block'
+            
+            
+        }
+        function closenav(){
+            document.getElementById('sidebar').style.width= "0px";
+            document.getElementById('header').style.display = "none";
+            document.getElementById('footer').style.display = "none";
+            document.getElementById('main').style.display = "none"
+        }
+    </script>
+</body>
+</html>

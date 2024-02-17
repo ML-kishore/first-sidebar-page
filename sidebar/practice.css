@@ -1,0 +1,108 @@
+*{
+    font-family: 'josefin sans';
+}
+.menu-btn h2{
+    position: absolute;
+    right: 200px;
+    top: 10px;
+   
+}
+.first{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 5px;
+    cursor: pointer;
+}
+.second{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+   
+}
+.third{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(17, 16, 16);
+    top: 0;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    transition: .4s ease-in-out;
+    z-index: 1;
+}
+.sidebar header{
+    background-color: #333131;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    height: 150px;  
+}
+.sidebar header img{
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
+}
+.sidebar header h2{
+    color: white;
+}
+ header .close-btn span{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: cursive;
+    cursor: pointer;
+}
+ main{
+    padding: 14px;
+    
+}
+main ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+main ul li{
+    padding: 30px;
+    transition: .4s;
+    margin: 2px;
+}
+main ul li:hover{
+    background-color: white;
+    color: black;
+}
+main ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+}
+main ul li a:hover{
+    color: black; 
+}
+.sidebar footer{
+    position: absolute;
+    color:white;
+    bottom: 10px;
+    padding: 20px;
+    background-color: #333131;
+    width: 82.5%;
+}
